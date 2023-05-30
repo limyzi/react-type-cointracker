@@ -6,7 +6,7 @@ import Header from "./Header";
 
 function Router(){
   return (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Header/>
     <Switch>
       <Route path="/:coinId">
